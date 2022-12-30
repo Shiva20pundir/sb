@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<style type="text/css">
+		.invalid{
+			border: red 2px solid;
+
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="bg-img"></div>
+ <section class="container">
+  <fieldset class="user_form">
+    <legend class="user_form__title">Sign up</legend>
+    <div class="user_form__msg"></div>
+     <form action="signup.inc.php" method="post" class="user_form__body">
+	    <label for="first name" class="user_form__lbl">First name:</label>
+	    <div class="input_box">	     
+	      <input type="text" id="fname" name="fname" min="2" max="20" class="user_form__field">
+	    </div>
+	    <label for="last name" class="user_form__lbl">Last name:</label>
+	    <div class="input_box">	     
+	      <input type="text" id="lname" name="lname" min="2" max="20" class="user_form__field">
+	    </div>
+	    <label for="email" class="user_form__lbl">Email:</label>
+	    <div class="input_box">	     
+	      <input type="text" id="email" name="email" class="user_form__field">
+	    </div>
+	    <label for="password" class="user_form__lbl">Password:</label>
+	    <div class="input_box">	     
+	      <input type="password" id="password" name="pwd" class="user_form__field">
+	    </div>
+	    <label for="password" class="user_form__lbl">Confirm Password:</label>     
+	    <div class="input_box">	     
+	      <input type="password" id="conf_pwd" name="conf_pwd" class="user_form__field">
+	    </div>
+	    
+	    <input type="submit" name="register" value="Sign up" class="user_form__btn">
+	 </form>
+	 <span class="user_form__note">Create an account. <a href="user_signup.html" class="user_form__link">Signup.</a></span>
+  </fieldset>
+ </section>
+</body>
+</html> 
+<script type="text/javascript" src="js/errors.js"></script>

@@ -1,0 +1,137 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background-image: url('../image/background.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: #2d80fd;
+}
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;  
+}
+.user_form__btn {
+  display: flex;
+  margin: 0.1em;
+  padding: 0.5em;
+  width: 99.5%;
+  border: none;
+  border-color: rgb(167, 164, 164);
+  cursor: pointer;
+  outline: none;
+  background-color: #2d80fd;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100; 
+  align-content: center;
+  content: attr(value);
+  justify-content: center;
+}
+.user_form{
+  background-color: #ffff;
+  display: inline-block;
+  align-items: center;
+  justify-content: center; 
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  width: 27em;
+  padding: .7em;
+  line-height: normal;
+  overflow: hidden;
+  font-size: medium;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+}
+.user_form__title{
+  background-color: #ffff;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+}
+.user_form__body{
+  display: block;
+  margin: .5em;
+  align-items: center;
+  justify-content: center;
+}
+.user_form__field{
+  margin: 1px;
+  padding: 3px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: none;
+  outline: none;
+  font-size: medium;
+  font-weight: 300;
+}
+.user_form__note{
+  margin: 10px;
+  padding: 7px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+.user_form__link{  
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2d80fd;
+}
+.user_form__lbl{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.input_box{
+  display: inline-flex;
+  border: 1px groove #000000;
+  padding: 3px;
+  cursor: text;
+  width: 98%;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.user_form__msg{
+	border: 2px solid #000000;
+	height: auto;
+    width: 100%;
+    opacity: 0;
+}
+.user_form__errmsg{
+	padding: 7px;
+	height: auto;
+    width: 96%;
+    background-color: rgba(255,0,0,0.1);
+	border: 2px solid #ff2314;
+	color: #ff2314;
+	opacity: 1;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 400;
+}
+.invalid{
+	border: 1px solid #ff0000;
+	box-shadow: 0 0 5px #ff0000;
+}
